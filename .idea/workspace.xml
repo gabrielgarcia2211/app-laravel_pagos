@@ -11,13 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a2384c4-d90a-4ca7-bdab-a376785ea0b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Traits/ConsumesExternalServices.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/paypal-collapse.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/stripe-collapse.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../egresados/public/img/carga.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../egresados/resources/views/dashboard/director/listarEstudiante.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../egresados/resources/views/dashboard/director/seguimiento.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../egresados/resources/views/dashboard/director/tesis.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resolvers/PaymentPlatformResolver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/PayPalServices.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/PseService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/StripeService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../egresados/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../egresados/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../egresados/app/Http/Controllers/DirectorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../egresados/app/Http/Controllers/DirectorController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../egresados/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../egresados/app/Http/Controllers/HomeController.php" afterDir="false" />
@@ -27,11 +24,20 @@
       <change beforePath="$PROJECT_DIR$/../egresados/public/js/director/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../egresados/public/js/director/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../egresados/resources/views/dashboard/director/actualizar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../egresados/resources/views/dashboard/director/actualizar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../egresados/resources/views/dashboard/director/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../egresados/resources/views/dashboard/director/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../egresados/resources/views/dashboard/director/listarEstudiante.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../egresados/resources/views/dashboard/director/listarEstudiante.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../egresados/resources/views/dashboard/director/nav/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../egresados/resources/views/dashboard/director/nav/nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../egresados/resources/views/dashboard/director/seguimiento.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../egresados/resources/views/dashboard/director/seguimiento.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../egresados/resources/views/dashboard/director/tesis.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../egresados/resources/views/dashboard/director/tesis.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../egresados/resources/views/layouts/director.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../egresados/resources/views/layouts/director.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../egresados/resources/views/login/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../egresados/resources/views/login/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../egresados/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../egresados/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../egresados/storage/app/public/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LaravelPagos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LaravelPagos.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Traits/ConsumesExternalServices.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Traits/ConsumesExternalServices.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +49,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -187,6 +193,13 @@
       <workItem from="1620751802664" duration="1765000" />
       <workItem from="1620780228706" duration="5139000" />
       <workItem from="1620826289758" duration="789000" />
+      <workItem from="1620827600778" duration="5942000" />
+      <workItem from="1620864808609" duration="3996000" />
+      <workItem from="1620912670095" duration="90000" />
+      <workItem from="1620915114601" duration="3004000" />
+      <workItem from="1620949772343" duration="1498000" />
+      <workItem from="1621128831985" duration="5460000" />
+      <workItem from="1621191431608" duration="8075000" />
     </task>
     <servers />
   </component>
@@ -214,13 +227,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1053" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1620745336027" />
-    <state x="1274" y="447" key="NewPhpFileDialog" timestamp="1620783971241">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1620918237229">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1274" y="447" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1620783971241" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1620918237229" />
+    <state x="1274" y="447" key="NewPhpFileDialog" timestamp="1621130223975">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1274" y="447" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621130223975" />
     <state width="543" height="446" key="SwitcherDM" timestamp="1620752901238">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="543" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1620752901238" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621133065692">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1621133065692" />
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1621192520339">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1621192520339" />
   </component>
 </project>

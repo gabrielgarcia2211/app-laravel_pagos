@@ -8,9 +8,11 @@ trait ConsumesExternalServices
 {
     public function makeRequest($method, $requestUrl, $queryParams = [], $formParams = [], $headers = [], $isJsonRequest = false)
     {
+
         $client = new Client([
             'base_uri' => $this->baseUri,
         ]);
+
 
         if (method_exists($this, 'resolveAuthorization')) {
             $this->resolveAuthorization($queryParams, $formParams, $headers);
@@ -28,6 +30,28 @@ trait ConsumesExternalServices
             $response = $this->decodeResponse($response);
         }
 
+
         return $response;
+    }
+
+    public function pseBank()
+    {
+        $client = new Client([
+            'base_uri' => $this->baseUriSecret,
+        ]);
+
+        $response = $client->request(
+            "GET",
+            "/restpagos/pse/bancos.json?public_key=" . $this->key
+        );
+
+        $response = $response->getBody()->getContents();
+
+        if (method_exists($this, 'decodeResponse')) {
+            $response = $this->decodeResponse($response);
+        }
+
+        return $response;
+
     }
 }
